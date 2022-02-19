@@ -1,0 +1,261 @@
+/********** GENERAL ***********/
+body
+{  
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+header 
+{
+    height: 106px;
+   /* background-color: aliceblue;*/
+}
+.container
+{
+    display: flex;
+    float: right;
+    margin: 1em 1em 1em 1em;
+    text-align: center;
+    
+}
+.container .Gmails,.container .images,.container .icons,.container .Sign
+{
+    margin-right: 1em;
+}
+.clear
+{
+    clear: both;
+}
+/*section
+{
+    padding: 0;
+    margin: 0;
+    background-color: beige;
+    height: 300px;
+    margin-top: -90px;
+}*/
+
+/*footer
+{
+    background-color: rgb(240, 240, 240);
+    height: 15;
+    margin-bottom: 0;
+}*/
+/******************* GENERAL ***********/
+
+/**************** CONTENU ***************/
+
+.container .Gmails a,.container .images a,.container .Sign a
+{
+    text-decoration: none;
+    color: rgb(126, 126, 125);
+    font-weight: bold;
+}
+
+.container .Sign a
+{
+    border: 1px rgb(1, 153, 255) transparent;
+    background-color: rgb(13, 152, 233);
+    padding: 0.5em 1em;
+    color: white;
+    border-radius: 2px;
+   
+}
+.container .Sign a:hover
+{
+    background-color: rgb(250, 164, 4);
+}
+
+ .logo
+{
+    text-align: center;
+}
+.logo img
+{
+    width: 25%;
+    padding-bottom: 0.5em;
+}
+.barre-recherche
+{
+    text-align: center;
+    padding-top: -1em;
+    margin-top: 0px;
+}
+.barre-recherche input
+{
+    width: 500px;
+    height: 38px;
+    border-radius: 90px;
+    font-size: medium;
+    border: none;
+    text-align: center;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.397);
+    margin-bottom: 2em;
+}
+.barre-recherche input::selection
+{
+    border: transparent;
+    box-shadow: 1px 1px  rgba(0, 0, 0, 0.212);
+}
+
+.container-2 , .boutons 
+{
+    text-align: center;
+}
+
+
+.container-2 ul
+{
+    list-style: none;
+    display:flex;
+    margin: auto;
+
+    text-align: center;
+    width: 500px;
+}
+.container-2 ul li
+{
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-left: 5em;
+}
+
+.container-2 ul li a
+{
+    text-decoration: none;
+    border: 1px gray solid;
+    padding: 0.5em 0.5em ;
+    background-color: rgba(138, 138, 130, 0.479);
+    color: rgb(126, 126, 125);
+    border-radius: 2px;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.boutons li a:hover
+{
+    background-color: rgb(250, 164, 4);
+}
+.langue
+{
+    margin-bottom: 2em;
+    height: 10em;
+ 
+}
+.langue p
+{
+    padding-bottom: 2em;
+    font-weight: 900;
+    padding-top: 1em;
+}
+main p a
+{
+    text-decoration: none;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#niger 
+{
+    padding: 0.5em 0 0.5em 3em;
+    border-top: 1px solid rgb(160, 158, 158);
+    border-bottom: 1px solid rgb(160, 158, 158);
+    margin-bottom: 0;
+    margin-top: 3.75em;
+    font-weight: 900;
+    background-color: rgb(111, 114, 113);
+    color: rgb(206, 206, 201);
+}
+.bas
+{
+    display: flex;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 0px;
+    background-color: rgb(111, 114, 113);
+    justify-content: space-between;
+    height: 70px;
+}
+.bas .footer-gauche ul
+{
+    display: flex;
+    float: left;
+    list-style: none;
+    margin-left: -2.5em;
+    padding-bottom: 0;
+}
+
+.bas .footer-droite ul
+{ 
+    display: flex;
+    float: right;
+    list-style:none;
+    justify-content: space-between;
+    padding-bottom: 0.5;
+    margin-left: 32em;
+}
+
+.bas .footer-droite ul li a,.bas .footer-gauche ul li a
+{
+ text-decoration: none; 
+ margin-right: 1em;
+ font-weight: 900;
+ color: rgb(206, 206, 201);
+ padding: 0.75em 0 0.5em 3em ;
+}
+/*************************** CONTENU **************/
+
+/****************** RESPONSIVE DESIGN ********************/
+
+    /************* RESPONSIVE SMARTPHONE ***********/   
+@media all and (max-width: 768px)
+{   
+    body
+    {
+        text-align: center;
+       
+    }
+    .barre-recherche input
+    {
+        width: 300px;
+        height: 38px;
+        border-radius: 90px;
+        border: none;
+        text-align: center;
+        box-shadow: 2px 1px rgba(0, 0, 0, 0.397);
+        margin-bottom: 2em;
+    }
+    .bas
+    {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        
+        margin: auto;
+        margin-bottom: 0px;
+        background-color: rgb(111, 114, 113);
+        height: 40%;
+    }
+    .footer-gauche,.footer-droite
+    {
+        max-width: 150px;
+        float: left;
+    }
+    
+    .clear
+
+    {
+        clear: both;
+    }
+    .bas .footer-droite ul li
+    { 
+        display: block;
+        float: left;
+        list-style:none;
+        padding-bottom: 0.5;
+        margin-left: 22em;
+        
+    }
+    
+}
